@@ -1,0 +1,20 @@
+{
+  "name": "piscine-talya",
+  "version": "1.0.0",
+  "description": "A js and react pool in order to prepare myself to an internship in talya.",
+  "homepage": "https://github.com/Willi363363/piscine-talya#readme",
+  "bugs": {
+    "url": "https://github.com/Willi363363/piscine-talya/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Willi363363/piscine-talya.git"
+  },
+  "license": "ISC",
+  "author": "William ROUVIERE",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
