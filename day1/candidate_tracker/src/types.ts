@@ -6,7 +6,9 @@ export type CandidateStatus =
     | "accepted"
     | "rejected";
 
-export type StatusDistribution = Record<CandidateStatus, number>;
+type StatusDistribution = Record<CandidateStatus, number>;
+
+type Skill = "React" | "TypeScript" | "Node" | "Docker";
 
 // ---- Interfaces ---
 
@@ -17,7 +19,7 @@ export interface Candidate {
     age: number;
     email: string;
     yearsOfExperience: number;
-    skills: string[];
+    skills: Skill[];
     status: CandidateStatus;
     salaryExpectation: number;
     notes?: string[];
@@ -27,6 +29,10 @@ export interface Statistics {
     totalCandidates: number;
     averageAge: number;
     averageYearsOfExperience: number;
-    skillsDistribution: Record<string, number>;
+    averageSalaryExpectation: number;
+    minSalaryExpectation: number;
+    maxSalaryExpectation: number;
+    mostPresentSkill: Skill | null;
+    skillsDistribution: Record<Skill, number>;
     statusDistribution: StatusDistribution;
 }
