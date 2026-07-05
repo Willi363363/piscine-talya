@@ -98,3 +98,4 @@ credentials.json
 
 # Ignore local project settings
 .local
+.vercel
