@@ -32,6 +32,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Next.js
+.next/
+.vercel/
+.pnp
+.pnp.*
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+next-env.d.ts
+
 # Vite / TypeScript
 dist/
 dist-ssr/
